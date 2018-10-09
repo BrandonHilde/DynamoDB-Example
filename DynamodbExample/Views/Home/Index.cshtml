@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<html>
+
+<head></head>
+
+<body>
+
+    <style>
+        .divForm
+        {
+            margin-right:auto;
+            margin-left:auto;
+            width: 500px;
+            background-color:#FFFFFF;
+            border-radius:7px;
+            margin-top:40px;
+        }
+
+        form input[type=text]
+        {
+            padding:2px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            margin-bottom:12px;
+        }
+
+        form input[type=submit] {
+            padding: 5px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor:pointer;
+        }
+    </style>
+    <div>
+        <div class="divForm">
+
+            <h3>Add Contact</h3>
+            <form action="Home/Add/" method="post">
+                <b>First Name:</b><br />
+                <input type="text" name="FirstName" /><br />
+                <b>Last Name:</b><br />
+                <input type="text" name="LastName" /><br />
+                <b>Phone:</b><br />
+                <input type="text" name="PhoneNumber" /><br />
+                <b>Email:</b><br />
+                <input type="text" name="Email" /><br />
+                <input type="submit" value="Add Contact" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
